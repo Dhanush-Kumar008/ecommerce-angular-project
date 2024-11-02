@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="overall-div">
+        <div class="product-div">
+            <div class="product-1">
+                <h3>ProductList</h3>
+                <button (click)="openSidePanel()" type="button">New</button>
+            </div>
+            <div class="product-2" >
+                <div class="one" *ngFor="let product of productList">
+                    <img [src]="product.productImageUrl" alt="">
+                    <h2>{{product.productName}}r</h2>
+                    <h3>{{product.categoryName}}</h3>
+                    <div>
+                        <button (click)="onEdit(product)">Edit</button>
+                        <button (click)="deleteProduct(product)" style="background-color:red;">Delete</button>
+                </div>
+            </div>
+         
+              
+    
+            </div>
+        </div>
+
+        <div class="category-div" *ngIf="isCategory">
+            <div class="category-1">
+                <h3>New Product</h3>
+                <button (click)="closeSidePanel()">Close</button>
+            </div>
+            <div class="category-2">
+                <input type="text" placeholder="Sku" [(ngModel)]="productObj.ProductSku">
+                <input type="text" placeholder="Name of a product"  [(ngModel)]="productObj.productName">
+                <input type="text" placeholder="Short Name"  [(ngModel)]="productObj.productShortName">
+                <input type="text" placeholder="Price"  [(ngModel)]="productObj.productPrice">
+                <select [(ngModel)]="productObj.categoryId">
+                    <option value="">Select a Category</option>
+                    <option *ngFor="let category of categoriesList"  [value]="category.categoryId">{{category.categoryName}}</option>
+                </select>
+                <input type="text" placeholder="Delivery Time Span"  [(ngModel)]="productObj.DeliveryTimeSpan">
+            </div>
+            <div class="category-3">
+               <input type="text" placeholder="Image URL"  [(ngModel)]="productObj.ProductImageUrl">
+               <textarea placeholder="Product Description"  [(ngModel)]="productObj.ProductDescription"></textarea>
+            </div>
+            <div class="category-3-btn">
+                <button (click)="reset()">Reset</button>
+                <button (click)="onSave()" *ngIf="productObj.ProductId==0">Create Product</button>
+                <button (click)="updateProduct()" *ngIf="productObj.ProductId!==0">Update Product</button>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+</html>

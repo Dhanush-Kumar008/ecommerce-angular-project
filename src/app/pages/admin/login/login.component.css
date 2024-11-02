@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.overall-div{
+    text-align: center;
+    padding-top: 90px;
+    padding-right:100px;
+    display: flex;
+    justify-content: space-between;
+
+   
+}
+
+.login-div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    margin-right: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    height: 55vh;
+    border-radius: 20px;
+   
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-div input{
+    height: 40px;
+    width:300px;
+    margin-top: 20px;
+    padding-left: 10px;
+}
+
+.logo-div{
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+.logo-div i{
+    margin-right: 30px;
+    font-size: 30px;
+
+   
+}
+
+.btn-div button{
+   width: 40vh;
+   background-color: yellow;
+   border: none;
+   padding-top: 15px;
+   padding-bottom: 15px;
+   font-size: large;
+   border-radius: 20px;
+   
+    
+    
+}
+
+.btn-div button:hover{
+    border-color: blueviolet;
+    
+}
+
+.btn-div{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.rem{
+    margin-top: 15px;
+    margin-right: 180px;
+}
+

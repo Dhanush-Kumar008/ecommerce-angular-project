@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="overall-div">
+    <div class="img-div">
+        <img src="https://img.freepik.com/free-vector/ecommerce-internet-shopping-promotion-campaign_335657-2977.jpg" alt="man with laptop" style="width: 90%;height: 70vh;">
+    </div>
+    <div class="login-div">
+        <h2><i class="fa-solid fa-address-card" style="color: blue;"></i> Login</h2>
+        <div class="input-div">
+            <input type="text" placeholder="Username" [(ngModel)]="loginObj.UserName">
+            <input type="text" placeholder="Password" [(ngModel)]="loginObj.UserPassword">
+        </div>
+        <div class="rem">
+            <input type="checkbox">Remember me 
+        </div>
+        <div class="logo-div">
+            <i class="fa-brands fa-google" style="color: red;"></i>
+            <i class="fa-brands fa-facebook" style="color: blue;"></i>
+            <i class="fa-brands fa-x-twitter" style="color: black;"></i>
+        </div>
+        <div class="btn-div">
+            <button type="button" (click)="onLogin()">Login</button>
+        </div>
+
+    </div>
+   </div>
+    
+</body>
+</html>

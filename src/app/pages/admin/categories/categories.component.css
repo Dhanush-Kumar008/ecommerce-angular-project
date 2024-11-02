@@ -1,0 +1,18 @@
+
+th{
+    font-size: large;
+}
+
+.table-div{
+    background-color: pink;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+button{
+    background-color: black;
+    color: pink;
+    padding: 5px;
+    border-radius: 12px;
+}

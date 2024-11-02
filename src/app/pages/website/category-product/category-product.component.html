@@ -1,0 +1,21 @@
+<div class="product-div">
+    <div class="product-1" *ngFor="let product of productsByCategoryId">
+        <div class="img-div">
+            <img [src]="product.productImageUrl" alt="">
+        </div>
+        <div class="img-info">
+            <div>
+                <h5>{{product.productShortName}}</h5>
+            </div>
+            <div class="star-div">
+                <i class="fa-solid fa-star" style="color: chartreuse;"></i>
+                <i class="fa-solid fa-star" style="color: chartreuse;"></i>
+                <i class="fa-solid fa-star" style="color: chartreuse;"></i>
+                <i class="fa-solid fa-star" style="color: chartreuse;"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <h4>{{product.productPrice}}$</h4>
+            <button><i class="fa-solid fa-bag-shopping"></i> Add to cart</button>
+        </div>
+    </div>
+</div>   
